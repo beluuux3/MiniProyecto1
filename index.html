@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en" id="todo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>PORT 1</title>
+  </head>
+  <body class="h-screen w-screen overflow-hidden flex flex-col sm:flex-row">
+    <header
+      class="fixed top-0 left-0 w-full sm:w-[20%] md:w-[25%] h-[10%] sm:h-full bg-[url(/img/fondoSS-16.jpg)] bg-cover bg-no-repeat bg-start dark:bg-[url(/img/fondoSS-17.jpg)] grid grid-cols-3 sm:grid-cols-1 items-center justify-center sm:justify-start sm:bg-center z-50"
+    >
+      <div
+        class="pl-5 sm:h-[15%] sm:order-3 sm:flex sm:justify-center sm:items-center"
+      >
+        <label class="relative inline-flex items-center cursor-pointer">
+          <input type="checkbox" class="sr-only peer" value="" id="btn-dark" />
+          <div
+            class="group peer bg-white rounded-full duration-300 w-16 h-8 ring-2 ring-[#ff4995] after:duration-300 after:bg-[#ff4995] peer-checked:bg-[#000000] peer-checked:after:bg-[#384cff] peer-checked:ring-[#384cff] after:rounded-full after:absolute after:h-6 after:w-6 after:top-1 after:left-1 after:flex after:justify-center after:items-center peer-checked:after:translate-x-8 peer-hover:after:scale-95 sm:ring"
+          ></div>
+        </label>
+      </div>
+
+      <div class="flex justify-center sm:order-1 sm:h-[15%] sm:-pt-20">
+        <a href="#home">
+          <img
+            src="./img/LOGOSS-14.png"
+            alt=""
+            class="h-[50px] sm:h-[80px] rounded-[50%] sm:justify-start sm:-pt-20"
+        /></a>
+      </div>
+
+      <div class="hidden menu sm:flex sm:h-[70%] sm:order-2 sm:justify-end">
+        <nav class="pt-20 items-center justify-center sm:pt-0 sm:w-full">
+          <ul class="w-[100%] flex flex-col gap-5 justify-end items-end">
+            <li
+              class="w-[80%] h-[50px] hover:bg-amber-50 rounded-bl-3xl rounded-tl-3xl"
+            >
+              <a
+                href="#about"
+                class="w-full h-full flex items-center justify-center transition-colors text-white text-lg font-bold duration-200 hover:text-[#8f0030] dark:hover:text-[#0c0d50]"
+              >
+                ABOUT
+              </a>
+            </li>
+
+            <li
+              class="w-[80%] h-[50px] hover:bg-amber-50 flex justify-center rounded-bl-2xl rounded-tl-2xl"
+            >
+              <a
+                href="#skills"
+                class="w-full h-full flex items-center justify-center transition-colors text-white text-lg font-bold duration-200 hover:text-[#8f0030] dark:hover:text-[#0c0d50]"
+              >
+                SKILLS
+              </a>
+            </li>
+
+            <li
+              class="w-[80%] h-[50px] hover:bg-amber-50 flex justify-center rounded-bl-2xl rounded-tl-2xl"
+            >
+              <a
+                href="#projects"
+                class="w-full h-full flex items-center justify-center transition-colors text-white text-lg font-bold duration-200 hover:text-[#8f0030] dark:hover:text-[#0c0d50]"
+              >
+                PROJECTS
+              </a>
+            </li>
+
+            <li
+              class="w-[80%] h-[50px] hover:bg-amber-50 flex justify-center rounded-bl-2xl rounded-tl-2xl"
+            >
+              <a
+                href="#contact"
+                class="w-full h-full flex items-center justify-center transition-colors text-white text-lg font-bold duration-200 hover:text-[#8f0030] dark:hover:text-[#0c0d50]"
+              >
+                CONTACT
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="flex justify-end pr-4 sm:hidden">
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main
+      class="w-full h-screen overflow-y-auto bg-[url(/img/FONDOGRANDE.png)] bg-cover bg-fixed bg-no-repeat bg-center flex flex-col items-center justify-start dark:bg-black dark:bg-[url(/img/FONDOGRANDE2.png)] dark:bg-center dark:bg-cover dark:bg-no-repeat dark:text-white sm:ml-[20%] md:ml-[25%] sm:w-[80%] md:w-[75%]"
+    >
+      <div id="home" class="w-[70%] mt-20 sm:mt-15">
+        <div
+          class="w-full h-[15%] flex justify-center items-center bg-[#ff7ea9] border-3 border-[#ff3e7e] dark:bg-[#141414] dark:border-[#3e61ff]"
+        >
+          <h1
+            class="text-[30px] text-[#9c2858] font-Cherry-Bomb-One dark:text-[#283d9c] md:text-6xl"
+          >
+            BIENVENIDO!
+          </h1>
+        </div>
+        <div
+          class="bg-[#a51b49]/50 border-3 border-[#ff3e7e] dark:bg-[#202020]/80 dark:border-[#3e61ff]"
+        >
+          <img src="./img/holiwis.png" alt="" class="object-cover" />
+        </div>
+      </div>
+      <p class="text-center text-3xl font-Outfit mt-2 md:mt-5">
+        ¡Holiwis! Soy
+        <span class="text-[#ff4995] dark:text-[#3e61ff] font-bold ml-2"
+          >Belén Segales</span
+        >
+        🌸
+      </p>
+
+      <p
+        class="p-5 text-center items-center text-lg font-Outfit max-w-[700px] mb-5 md:mb-10"
+      >
+        Desarrolladora <span class="font-bold">Frontend</span> y amante del
+        diseño, la creatividad y las experiencias web que transmiten emoción.
+        Estudio en <span class="font-bold">Funval</span> y disfruto combinar
+        código + arte para crear interfaces interactivas y coloridas.
+      </p>
+
+      <section
+        id="about"
+        class="w-full h-[1000px] flex flex-col items-center justify-center bg-white dark:bg-black dark:text-white px-10 md:flex-row md:min-h-screen"
+      >
+        <div
+          class="w-full max-w-sm flex flex-row items-center justify-center gap-4 py-8 sm:flex-row sm:max-w-full sm:justify-center sm:gap-1 md:flex-col md:gap-8 md:w-[40%] lg:gap-10"
+        >
+          <div
+            class="w-64 h-auto rotate-3 hover:rotate-0 transform transition-transform duration-300 ease-in-out"
+          >
+            <img
+              src="./img/belu1.jpg"
+              alt="Belen 1"
+              class="w-[100px] h-[100px] object-cover object-top rounded shadow-lg md:h-[150px] md:w-[150px] lg:h-[170px] lg:w-[170px]"
+            />
+          </div>
+
+          <div
+            class="photo-card w-64 h-auto -rotate-2 hover:rotate-0 transform transition-transform duration-300 ease-in-out"
+          >
+            <img
+              src="./img/belu2.jpg"
+              alt="Belen 2"
+              class="w-[100px] h-[100px] object-cover object-top rounded shadow-lg md:h-[150px] md:w-[150px] lg:h-[170px] lg:w-[170px]"
+            />
+          </div>
+
+          <div
+            class="photo-card w-64 h-auto rotate-1 hover:rotate-0 transform transition-transform duration-300 ease-in-out"
+          >
+            <img
+              src="./img/belu3.jpg"
+              alt="Belen 3"
+              class="w-[100px] h-[100px] object-cover object-top rounded shadow-lg md:h-[150px] md:w-[150px] lg:h-[170px] lg:w-[170px]"
+            />
+          </div>
+        </div>
+
+        <div class="md:w-[70%]">
+          <h2
+            class="text-4xl font-Cherry-Bomb-One text-[#a51b49] dark:text-[#3e61ff] mb-10 text-center"
+          >
+            SOBRE MÍ
+          </h2>
+          <p
+            class="max-w-[800px] text-center text-lg leading-relaxed font-Outfit"
+          >
+            Soy
+            <span class="font-bold text-[#ff4995] dark:text-[#3e61ff]"
+              >Belén Segales</span
+            >, soy una desarrolladora Frontend con un enfoque creativo y visual
+            desde Bolivia ^^. Me apasiona construir sitios web dinámicos,
+            intuitivos y con identidad propia.
+          </p>
+          <p
+            class="max-w-[800px] text-center text-lg leading-relaxed font-Outfit mt-4 mb-4"
+          >
+            Me encanta aprender nuevas tecnologías, experimentar con colores y
+            animaciones, y dar vida a ideas a través del código. Cuando no estoy
+            programando, disfruto crear diseños, enseñar y compartir
+            conocimiento con otros.
+          </p>
+
+          <p
+            class="max-w-[800px] text-center italic text-lg leading-relaxed font-Outfit mt-4 mb-4"
+          >
+            "Intentando hacer del mundo un lugar más extraño."
+          </p>
+
+          <p
+            class="max-w-[800px] text-center text-lg leading-relaxed font-Outfit mt-4 mb-4"
+          >
+            🎈 Whatever, Love & Rockets.
+          </p>
+
+          <a
+            href="./assets/CVBelenSegales.pdf"
+            download="CV_Belen_Segales.pdf"
+            class="relative group cursor-pointer mt-50"
+          >
+            <div
+              class="relative w-[200px] px-8 py-4 border-2 border-pink-500 text-pink-500 font-bold text-lg rounded-lg transform transition-all duration-300 group-hover:translate-y-1 group-hover:translate-x-1 shadow-[6px_6px_10px_rgba(0,0,0,0.6),-6px_-6px_10px_rgba(255,255,255,0.1)] group-hover:shadow-[8px_8px_15px_rgba(0,0,0,0.8),-8px_-8px_15px_rgba(255,255,255,0.15)] dark:border-blue-500 dark:text-blue-500"
+            >
+              Descargar CV
+            </div>
+
+            <div
+              class="absolute w-[200px] inset-0 border-2 border-dashed border-pink-500 rounded-lg opacity-50 group-hover:opacity-100 transition-opacity duration-300 dark:border-blue-500"
+            ></div>
+
+            <div
+              class="absolute -bottom-2 -left-2 w-4 h-4 bg-pink-500 rounded-full animate-ping shadow-lg dark:bg-blue-500"
+            ></div>
+            <div
+              class="absolute top-1/3 left-3 w-3 h-3 bg-pink-400 rounded-full animate-ping opacity-70 dark:bg-blue-400"
+            ></div>
+          </a>
+        </div>
+      </section>
+
+      <section
+        id="skills"
+        class="grid grid-cols-1 items-center justify-center py-5 px-6 mt-5 dark:text-white sm:mt-10 md:mt-5"
+      >
+        <h2
+          class="text-4xl font-Cherry-Bomb-One text-[#a51b49] dark:text-[#3e61ff] mb-10 text-center"
+        >
+          HABILIDADES E INTERESES
+        </h2>
+
+        <div
+          class="max-w-5xl grid grid-cols-1 sm:grid-cols-2 gap-8 text-lg font-Outfit"
+        >
+          <div
+            class="group bg-white/70 dark:bg-[#1b1b1b]/70 border-2 border-[#ff3e7e] dark:border-[#3e61ff] rounded-2xl p-5 shadow-lg hover:scale-[1.02] transition-transform"
+          >
+            <div class="flex items-center gap-3 mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-7 h-7 text-[#ff4995] dark:text-[#3e61ff]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 4h16v16H4z"
+                />
+              </svg>
+              <h3
+                class="text-xl font-semibold text-[#9c2858] dark:text-[#5a73ff]"
+              >
+                Programas de Ofimática
+              </h3>
+            </div>
+            <p>
+              Word, Excel, PowerPoint, Google Drive, Google Docs, Google Slides,
+              Dropbox, Meet, Zoom, Microsoft Teams.
+            </p>
+          </div>
+
+          <div
+            class="group bg-white/70 dark:bg-[#1b1b1b]/70 border-2 border-[#ff3e7e] dark:border-[#3e61ff] rounded-2xl p-5 shadow-lg hover:scale-[1.02] transition-transform"
+          >
+            <div class="flex items-center gap-3 mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-7 h-7 text-[#ff4995] dark:text-[#3e61ff]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4v16m8-8H4"
+                />
+              </svg>
+              <h3
+                class="text-xl font-semibold text-[#9c2858] dark:text-[#5a73ff]"
+              >
+                Diseño Gráfico
+              </h3>
+            </div>
+            <p>
+              Adobe Photoshop, Illustrator, InDesign, Dreamweaver y herramientas
+              online como Canva.
+            </p>
+          </div>
+
+          <div
+            class="group bg-white/70 dark:bg-[#1b1b1b]/70 border-2 border-[#ff3e7e] dark:border-[#3e61ff] rounded-2xl p-5 shadow-lg hover:scale-[1.02] transition-transform"
+          >
+            <div class="flex items-center gap-3 mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-7 h-7 text-[#ff4995] dark:text-[#3e61ff]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 4a1 1 0 011-1h16a1 1 0 011 1v16l-9-4-9 4V4z"
+                />
+              </svg>
+              <h3
+                class="text-xl font-semibold text-[#9c2858] dark:text-[#5a73ff]"
+              >
+                Lenguajes de Programación
+              </h3>
+            </div>
+            <p>JavaScript, HTML, CSS y Java.</p>
+          </div>
+
+          <div
+            class="group bg-white/70 dark:bg-[#1b1b1b]/70 border-2 border-[#ff3e7e] dark:border-[#3e61ff] rounded-2xl p-5 shadow-lg hover:scale-[1.02] transition-transform"
+          >
+            <div class="flex items-center gap-3 mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-7 h-7 text-[#ff4995] dark:text-[#3e61ff]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 10h4v4h-4zM6 10h4v4H6z"
+                />
+              </svg>
+              <h3
+                class="text-xl font-semibold text-[#9c2858] dark:text-[#5a73ff]"
+              >
+                Frameworks y Librerías
+              </h3>
+            </div>
+            <p>FastAPI, React, Next.js y Node.js.</p>
+          </div>
+
+          <div
+            class="group bg-white/70 dark:bg-[#1b1b1b]/70 border-2 border-[#ff3e7e] dark:border-[#3e61ff] rounded-2xl p-5 shadow-lg hover:scale-[1.02] transition-transform"
+          >
+            <div class="flex items-center gap-3 mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-7 h-7 text-[#ff4995] dark:text-[#3e61ff]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2M4 7h16M4 12h16"
+                />
+              </svg>
+              <h3
+                class="text-xl font-semibold text-[#9c2858] dark:text-[#5a73ff]"
+              >
+                Herramientas de Desarrollo
+              </h3>
+            </div>
+            <p>VSCode, Eclipse y GitHub.</p>
+          </div>
+
+          <div
+            class="group bg-white/70 dark:bg-[#1b1b1b]/70 border-2 border-[#ff3e7e] dark:border-[#3e61ff] rounded-2xl p-5 shadow-lg hover:scale-[1.02] transition-transform"
+          >
+            <div class="flex items-center gap-3 mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-7 h-7 text-[#ff4995] dark:text-[#3e61ff]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 10h8M8 14h8M12 18h0M12 6h0"
+                />
+              </svg>
+              <h3
+                class="text-xl font-semibold text-[#9c2858] dark:text-[#5a73ff]"
+              >
+                Redes Sociales y Comunicación
+              </h3>
+            </div>
+            <p>
+              Gestión de redes sociales y herramientas digitales para difusión
+              de contenidos.
+            </p>
+          </div>
+
+          <div
+            class="group bg-white/70 dark:bg-[#1b1b1b]/70 border-2 border-[#ff3e7e] dark:border-[#3e61ff] rounded-2xl p-5 shadow-lg hover:scale-[1.02] transition-transform"
+          >
+            <div class="flex items-center gap-3 mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-7 h-7 text-[#ff4995] dark:text-[#3e61ff]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12h6m-3-3v6m-6 4h12a2 2 0 002-2V8a2 2 0 00-2-2H6a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+              <h3
+                class="text-xl font-semibold text-[#9c2858] dark:text-[#5a73ff]"
+              >
+                Equipos y Producción
+              </h3>
+            </div>
+            <p>
+              Manejo de PC, impresoras, escáneres, fotocopiadoras y equipos de
+              sublimación y serigrafía.
+            </p>
+          </div>
+
+          <div
+            class="group bg-white/70 dark:bg-[#1b1b1b]/70 border-2 border-[#ff3e7e] dark:border-[#3e61ff] rounded-2xl p-5 shadow-lg hover:scale-[1.02] transition-transform"
+          >
+            <div class="flex items-center gap-3 mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-7 h-7 text-[#ff4995] dark:text-[#3e61ff]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4l2 4h4l-3 3 1 4-4-2-4 2 1-4-3-3h4z"
+                />
+              </svg>
+              <h3
+                class="text-xl font-semibold text-[#9c2858] dark:text-[#5a73ff]"
+              >
+                Idiomas
+              </h3>
+            </div>
+            <p>Inglés básico - intermedio.</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        class="py-16 px-6 sm:px-12 bg-gray-50 dark:bg-neutral-900"
+      >
+        <h2
+          class="text-4xl font-Cherry-Bomb-One text-[#a51b49] dark:text-[#3e61ff] mb-10 text-center"
+        >
+          PROYECTOS
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="/img/TAREA.png"
+              alt="Proyecto 1"
+              class="w-full h-40 object-cover"
+            />
+
+            <div class="p-5">
+              <h3
+                class="text-xl font-semibold mb-2 text-gray-900 dark:text-white"
+              >
+                Página One Piece
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
+                Web sobre información del anime One Piece, con detalles de
+                personajes, episodios y noticias.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 text-xs font-semibold bg-orange-100 text-orange-600 rounded-full dark:bg-orange-800/40 dark:text-orange-300"
+                >
+                  HTML
+                </span>
+                <span
+                  class="px-3 py-1 text-xs font-semibold bg-purple-100 text-purple-600 rounded-full dark:bg-purple-800/40 dark:text-purple-300"
+                >
+                  CSS
+                </span>
+                <span
+                  class="px-3 py-1 text-xs font-semibold bg-yellow-100 text-yellow-600 rounded-full dark:bg-yellow-800/40 dark:text-yellow-300"
+                >
+                  JavaScript
+                </span>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                  Ver demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="/img/TAREA 1.png"
+              alt="Proyecto 2"
+              class="w-full h-40 object-cover"
+            />
+
+            <div class="p-5">
+              <h3
+                class="text-xl font-semibold mb-2 text-gray-900 dark:text-white"
+              >
+                PRESENTACIÓN - PRACT 1 - FUNVAL
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
+                Aprendiendo lo básico de html y css. Primera práctica de Funval.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 text-xs font-semibold bg-orange-100 text-orange-600 rounded-full dark:bg-orange-800/40 dark:text-orange-300"
+                >
+                  HTML
+                </span>
+                <span
+                  class="px-3 py-1 text-xs font-semibold bg-purple-100 text-purple-600 rounded-full dark:bg-purple-800/40 dark:text-purple-300"
+                >
+                  CSS
+                </span>
+                >
+              </div>
+
+              <div class="flex justify-between items-center">
+                <a
+                  href="https://beluuux3.github.io/tareas-funval/practica-1/index.html"
+                  target="_blank"
+                  class="flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                  Ver demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="/img/TAREA 2.png"
+              alt="Proyecto 3"
+              class="w-full h-40 object-cover"
+            />
+
+            <div class="p-5">
+              <h3
+                class="text-xl font-semibold mb-2 text-gray-900 dark:text-white"
+              >
+                FORMULARIO - PRACT 2 - FUNVAL
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
+                Recreación de formulario de EpicGames con botones funcionales.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 text-xs font-semibold bg-orange-100 text-orange-600 rounded-full dark:bg-orange-800/40 dark:text-orange-300"
+                >
+                  HTML
+                </span>
+                <span
+                  class="px-3 py-1 text-xs font-semibold bg-purple-100 text-purple-600 rounded-full dark:bg-purple-800/40 dark:text-purple-300"
+                >
+                  CSS
+                </span>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <a
+                  href="https://beluuux3.github.io/tareas-funval/practica-2/index.html"
+                  target="_blank"
+                  class="flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                  Ver demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="/img/TAREA 3.png"
+              alt="Proyecto 4"
+              class="w-full h-40 object-cover"
+            />
+
+            <div class="p-5">
+              <h3
+                class="text-xl font-semibold mb-2 text-gray-900 dark:text-white"
+              >
+                MANEJO FLEX DISPLAY - PRACT 3 - FUNVAL
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
+                Elaboración de página web para una One piece. Uso de Flex,
+                display.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 text-xs font-semibold bg-orange-100 text-orange-600 rounded-full dark:bg-orange-800/40 dark:text-orange-300"
+                >
+                  HTML
+                </span>
+                <span
+                  class="px-3 py-1 text-xs font-semibold bg-purple-100 text-purple-600 rounded-full dark:bg-purple-800/40 dark:text-purple-300"
+                >
+                  CSS
+                </span>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <a
+                  href="https://beluuux3.github.io/tareas-funval/practica-3/index.html"
+                  target="_blank"
+                  class="flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                  Ver demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="/img/TAREA 4.png"
+              alt="Proyecto 5"
+              class="w-full h-40 object-cover"
+            />
+
+            <div class="p-5">
+              <h3
+                class="text-xl font-semibold mb-2 text-gray-900 dark:text-white"
+              >
+                CHALLENGE TIC TAC TOE - PRACT 4 - FUNVAL
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
+                Elaboración de challenge Tic Tac Toe. Responsive web con uso de
+                Grid y Flex.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 text-xs font-semibold bg-orange-100 text-orange-600 rounded-full dark:bg-orange-800/40 dark:text-orange-300"
+                >
+                  HTML
+                </span>
+                <span
+                  class="text-xs px-2 py-1 bg-yellow-100 dark:bg-yellow-800 text-yellow-600 dark:text-yellow-200 rounded"
+                  >Tailwind</span
+                >
+              </div>
+
+              <div class="flex justify-between items-center">
+                <a
+                  href="https://beluuux3.github.io/tareas-funval/practica-3/index.html"
+                  target="_blank"
+                  class="flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                  Ver demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="/img/umam.png"
+              alt="Proyecto 6"
+              class="w-full h-40 object-cover"
+            />
+
+            <div class="p-5">
+              <h3
+                class="text-xl font-semibold mb-2 text-gray-900 dark:text-white"
+              >
+                Sistema de Control Académico - UMAM
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
+                Plataforma web para la gestión académica de la Universidad
+                Municipal del Adulto Mayor, con módulos de inscripción,
+                calificaciones y certificados.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="text-xs px-2 py-1 bg-blue-100 dark:bg-blue-800 text-blue-600 dark:text-blue-200 rounded"
+                  >React</span
+                >
+                <span
+                  class="text-xs px-2 py-1 bg-yellow-100 dark:bg-yellow-800 text-yellow-600 dark:text-yellow-200 rounded"
+                  >Tailwind</span
+                >
+                <span
+                  class="text-xs px-2 py-1 bg-green-100 dark:bg-green-800 text-green-600 dark:text-green-200 rounded"
+                  >FastAPI</span
+                >
+              </div>
+
+              <div class="flex justify-between items-center">
+                <a
+                  href="https://proyecto-belen-umam.vercel.app/login"
+                  class="flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                  Ver demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="w-full p-4 sm:p-8">
+        <h2
+          class="text-4xl font-Cherry-Bomb-One text-[#a51b49] dark:text-[#3e61ff] mb-10 text-center"
+        >
+          HÁBLAME
+        </h2>
+
+        <form
+          action="TU_ENDPOINT_DE_ENVIO"
+          method="POST"
+          class="max-w-xl mx-auto space-y-6 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-2xl"
+        >
+          <div>
+            <label
+              for="name"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+            >
+              Nombre
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Escribe tu nombre aquí..."
+              required
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            />
+          </div>
+
+          <div>
+            <label
+              for="email"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Escribe tu email aquí..."
+              required
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            />
+          </div>
+
+          <div>
+            <label
+              for="message"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+            >
+              Tu Mensaje
+            </label>
+            <textarea
+              name="message"
+              placeholder="Escribe tu mensaje aquí..."
+              rows="4"
+              required
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            ></textarea>
+          </div>
+
+          <div class="pt-4">
+            <button
+              type="submit"
+              class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-[#ff4995] hover:bg-[#8f0030] dark:bg-[#494cff] dark:hover:bg-[#00218f] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff4995] dark:focus:ring-[#4964ff] transition duration-150"
+            >
+              Enviar Mensaje
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <footer
+        class="w-full bg-gray-100 dark:bg-neutral-900 py-8 mt-16 border-t border-gray-200 dark:border-neutral-700"
+      >
+        <div
+          class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4"
+        >
+          <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            © 2025 Belen Mariel Segales Ramos
+          </h2>
+
+          <div class="flex space-x-6">
+            <a
+              href="https://github.com/beluuux3"
+              target="_blank"
+              class="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 2C6.48 2 2 6.48 2 12c0 4.41 2.87 8.16 6.84 9.49.5.09.66-.22.66-.48 0-.24-.01-.88-.01-1.73-2.78.6-3.37-1.34-3.37-1.34-.45-1.13-1.11-1.43-1.11-1.43-.91-.62.07-.6.07-.6 1.01.07 1.55 1.04 1.55 1.04.9 1.55 2.36 1.1 2.94.84.09-.65.35-1.1.64-1.35-2.22-.25-4.55-1.11-4.55-4.95 0-1.09.39-1.98 1.03-2.68-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.02A9.5 9.5 0 0112 6.8a9.5 9.5 0 012.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.4.2 2.44.1 2.7.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86 0 1.35-.01 2.44-.01 2.77 0 .26.16.57.67.47A10.02 10.02 0 0022 12c0-5.52-4.48-10-10-10z"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/belen-mariel-segales-ramos-b59504353/"
+              target="_blank"
+              class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 8a6 6 0 016 6v6h-4v-6a2 2 0 00-4 0v6h-4v-6a6 6 0 016-6zM2 9h4v12H2z"
+                />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+
+            <a
+              href="https://www.instagram.com/beluuux3/"
+              target="_blank"
+              class="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="4" ry="4" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="mailto:belenmsr.805@gmail.com"
+              class="text-gray-600 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 12H8m8 0l-8-6m8 6l-8 6"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+
+  <script>
+    let botoncito = document.querySelector("#btn-dark");
+    let todo = document.querySelector("#todo");
+    botoncito.addEventListener("click", function () {
+      todo.classList.toggle("dark");
+    });
+  </script>
+</html>
