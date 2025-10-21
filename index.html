@@ -59,7 +59,7 @@
               class="w-[80%] h-[50px] hover:bg-amber-50 flex justify-center rounded-bl-2xl rounded-tl-2xl"
             >
               <a
-                href="#projects"
+                href="proyectos.html"
                 class="w-full h-full flex items-center justify-center transition-colors text-white text-lg font-bold duration-200 hover:text-[#8f0030] dark:hover:text-[#0c0d50]"
               >
                 PROJECTS
@@ -81,14 +81,14 @@
       </div>
 
       <div class="flex justify-end pr-4 sm:hidden">
-        <button>
+        <button id="menu-toggle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6"
+            class="size-6 text-white"
           >
             <path
               stroke-linecap="round"
@@ -99,6 +99,48 @@
         </button>
       </div>
     </header>
+
+    <div
+      id="mobile-menu"
+      class="fixed top-[10%] left-0 w-full bg-[#ff4995] dark:bg-[#3e61ff] transform -translate-y-full transition-transform duration-300 ease-in-out z-40 sm:hidden"
+    >
+      <nav class="py-6">
+        <ul class="flex flex-col gap-4 px-6">
+          <li>
+            <a
+              href="#about"
+              class="block py-3 px-4 text-white text-lg font-bold hover:bg-white/20 rounded transition-colors"
+            >
+              ABOUT
+            </a>
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="block py-3 px-4 text-white text-lg font-bold hover:bg-white/20 rounded transition-colors"
+            >
+              SKILLS
+            </a>
+          </li>
+          <li>
+            <a
+              href="proyectos.html"
+              class="block py-3 px-4 text-white text-lg font-bold hover:bg-white/20 rounded transition-colors"
+            >
+              PROJECTS
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="block py-3 px-4 text-white text-lg font-bold hover:bg-white/20 rounded transition-colors"
+            >
+              CONTACT
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <main
       class="w-full h-screen overflow-y-auto bg-[url(/img/FONDOGRANDE.png)] bg-cover bg-fixed bg-no-repeat bg-center flex flex-col items-center justify-start dark:bg-black dark:bg-[url(/img/FONDOGRANDE2.png)] dark:bg-center dark:bg-cover dark:bg-no-repeat dark:text-white sm:ml-[20%] md:ml-[25%] sm:w-[80%] md:w-[75%]"
     >
@@ -247,235 +289,8 @@
 
         <div
           class="max-w-5xl grid grid-cols-1 sm:grid-cols-2 gap-8 text-lg font-Outfit"
-        >
-          <div
-            class="group bg-white/70 dark:bg-[#1b1b1b]/70 border-2 border-[#ff3e7e] dark:border-[#3e61ff] rounded-2xl p-5 shadow-lg hover:scale-[1.02] transition-transform"
-          >
-            <div class="flex items-center gap-3 mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-7 h-7 text-[#ff4995] dark:text-[#3e61ff]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 4h16v16H4z"
-                />
-              </svg>
-              <h3
-                class="text-xl font-semibold text-[#9c2858] dark:text-[#5a73ff]"
-              >
-                Programas de Ofimática
-              </h3>
-            </div>
-            <p>
-              Word, Excel, PowerPoint, Google Drive, Google Docs, Google Slides,
-              Dropbox, Meet, Zoom, Microsoft Teams.
-            </p>
-          </div>
-
-          <div
-            class="group bg-white/70 dark:bg-[#1b1b1b]/70 border-2 border-[#ff3e7e] dark:border-[#3e61ff] rounded-2xl p-5 shadow-lg hover:scale-[1.02] transition-transform"
-          >
-            <div class="flex items-center gap-3 mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-7 h-7 text-[#ff4995] dark:text-[#3e61ff]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 4v16m8-8H4"
-                />
-              </svg>
-              <h3
-                class="text-xl font-semibold text-[#9c2858] dark:text-[#5a73ff]"
-              >
-                Diseño Gráfico
-              </h3>
-            </div>
-            <p>
-              Adobe Photoshop, Illustrator, InDesign, Dreamweaver y herramientas
-              online como Canva.
-            </p>
-          </div>
-
-          <div
-            class="group bg-white/70 dark:bg-[#1b1b1b]/70 border-2 border-[#ff3e7e] dark:border-[#3e61ff] rounded-2xl p-5 shadow-lg hover:scale-[1.02] transition-transform"
-          >
-            <div class="flex items-center gap-3 mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-7 h-7 text-[#ff4995] dark:text-[#3e61ff]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 4a1 1 0 011-1h16a1 1 0 011 1v16l-9-4-9 4V4z"
-                />
-              </svg>
-              <h3
-                class="text-xl font-semibold text-[#9c2858] dark:text-[#5a73ff]"
-              >
-                Lenguajes de Programación
-              </h3>
-            </div>
-            <p>JavaScript, HTML, CSS y Java.</p>
-          </div>
-
-          <div
-            class="group bg-white/70 dark:bg-[#1b1b1b]/70 border-2 border-[#ff3e7e] dark:border-[#3e61ff] rounded-2xl p-5 shadow-lg hover:scale-[1.02] transition-transform"
-          >
-            <div class="flex items-center gap-3 mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-7 h-7 text-[#ff4995] dark:text-[#3e61ff]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M14 10h4v4h-4zM6 10h4v4H6z"
-                />
-              </svg>
-              <h3
-                class="text-xl font-semibold text-[#9c2858] dark:text-[#5a73ff]"
-              >
-                Frameworks y Librerías
-              </h3>
-            </div>
-            <p>FastAPI, React, Next.js y Node.js.</p>
-          </div>
-
-          <div
-            class="group bg-white/70 dark:bg-[#1b1b1b]/70 border-2 border-[#ff3e7e] dark:border-[#3e61ff] rounded-2xl p-5 shadow-lg hover:scale-[1.02] transition-transform"
-          >
-            <div class="flex items-center gap-3 mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-7 h-7 text-[#ff4995] dark:text-[#3e61ff]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2M4 7h16M4 12h16"
-                />
-              </svg>
-              <h3
-                class="text-xl font-semibold text-[#9c2858] dark:text-[#5a73ff]"
-              >
-                Herramientas de Desarrollo
-              </h3>
-            </div>
-            <p>VSCode, Eclipse y GitHub.</p>
-          </div>
-
-          <div
-            class="group bg-white/70 dark:bg-[#1b1b1b]/70 border-2 border-[#ff3e7e] dark:border-[#3e61ff] rounded-2xl p-5 shadow-lg hover:scale-[1.02] transition-transform"
-          >
-            <div class="flex items-center gap-3 mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-7 h-7 text-[#ff4995] dark:text-[#3e61ff]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M8 10h8M8 14h8M12 18h0M12 6h0"
-                />
-              </svg>
-              <h3
-                class="text-xl font-semibold text-[#9c2858] dark:text-[#5a73ff]"
-              >
-                Redes Sociales y Comunicación
-              </h3>
-            </div>
-            <p>
-              Gestión de redes sociales y herramientas digitales para difusión
-              de contenidos.
-            </p>
-          </div>
-
-          <div
-            class="group bg-white/70 dark:bg-[#1b1b1b]/70 border-2 border-[#ff3e7e] dark:border-[#3e61ff] rounded-2xl p-5 shadow-lg hover:scale-[1.02] transition-transform"
-          >
-            <div class="flex items-center gap-3 mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-7 h-7 text-[#ff4995] dark:text-[#3e61ff]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 12h6m-3-3v6m-6 4h12a2 2 0 002-2V8a2 2 0 00-2-2H6a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
-              </svg>
-              <h3
-                class="text-xl font-semibold text-[#9c2858] dark:text-[#5a73ff]"
-              >
-                Equipos y Producción
-              </h3>
-            </div>
-            <p>
-              Manejo de PC, impresoras, escáneres, fotocopiadoras y equipos de
-              sublimación y serigrafía.
-            </p>
-          </div>
-
-          <div
-            class="group bg-white/70 dark:bg-[#1b1b1b]/70 border-2 border-[#ff3e7e] dark:border-[#3e61ff] rounded-2xl p-5 shadow-lg hover:scale-[1.02] transition-transform"
-          >
-            <div class="flex items-center gap-3 mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-7 h-7 text-[#ff4995] dark:text-[#3e61ff]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 4l2 4h4l-3 3 1 4-4-2-4 2 1-4-3-3h4z"
-                />
-              </svg>
-              <h3
-                class="text-xl font-semibold text-[#9c2858] dark:text-[#5a73ff]"
-              >
-                Idiomas
-              </h3>
-            </div>
-            <p>Inglés básico - intermedio.</p>
-          </div>
-        </div>
+          id="habilidades-container"
+        ></div>
       </section>
 
       <section
@@ -858,7 +673,7 @@
         </h2>
 
         <form
-          action="TU_ENDPOINT_DE_ENVIO"
+          action="https://formsubmit.co/54d861e4fba2acc58aa8f89cf3ed35fd"
           method="POST"
           class="max-w-xl mx-auto space-y-6 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-2xl"
         >
@@ -904,6 +719,7 @@
               Tu Mensaje
             </label>
             <textarea
+              id="message"
               name="message"
               placeholder="Escribe tu mensaje aquí..."
               rows="4"
@@ -1024,11 +840,6 @@
     </main>
   </body>
 
-  <script>
-    let botoncito = document.querySelector("#btn-dark");
-    let todo = document.querySelector("#todo");
-    botoncito.addEventListener("click", function () {
-      todo.classList.toggle("dark");
-    });
-  </script>
+  <script src="habilidades.js"></script>
+  <script src="app.js"></script>
 </html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es" id="todo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Proyectos - Belén Segales</title>
+  </head>
+  <body class="h-screen w-screen overflow-hidden flex flex-col sm:flex-row">
+    <header
+      class="fixed top-0 left-0 w-full sm:w-[20%] md:w-[25%] h-[10%] sm:h-full bg-[url(/img/fondoSS-16.jpg)] bg-cover bg-no-repeat bg-start dark:bg-[url(/img/fondoSS-17.jpg)] grid grid-cols-3 sm:grid-cols-1 items-center justify-center sm:justify-start sm:bg-center z-50"
+    >
+      <div
+        class="pl-5 sm:h-[15%] sm:order-3 sm:flex sm:justify-center sm:items-center"
+      >
+        <label class="relative inline-flex items-center cursor-pointer">
+          <input type="checkbox" class="sr-only peer" value="" id="btn-dark" />
+          <div
+            class="group peer bg-white rounded-full duration-300 w-16 h-8 ring-2 ring-[#ff4995] after:duration-300 after:bg-[#ff4995] peer-checked:bg-[#000000] peer-checked:after:bg-[#384cff] peer-checked:ring-[#384cff] after:rounded-full after:absolute after:h-6 after:w-6 after:top-1 after:left-1 after:flex after:justify-center after:items-center peer-checked:after:translate-x-8 peer-hover:after:scale-95 sm:ring"
+          ></div>
+        </label>
+      </div>
+
+      <div class="flex justify-center sm:order-1 sm:h-[15%] sm:-pt-20">
+        <a href="index.html">
+          <img
+            src="./img/LOGOSS-14.png"
+            alt=""
+            class="h-[50px] sm:h-[80px] rounded-[50%] sm:justify-start sm:-pt-20"
+        /></a>
+      </div>
+
+      <div class="hidden menu sm:flex sm:h-[70%] sm:order-2 sm:justify-end">
+        <nav class="pt-20 items-center justify-center sm:pt-0 sm:w-full">
+          <ul class="w-[100%] flex flex-col gap-5 justify-end items-end">
+            <li
+              class="w-[80%] h-[50px] hover:bg-amber-50 rounded-bl-3xl rounded-tl-3xl"
+            >
+              <a
+                href="index.html#about"
+                class="w-full h-full flex items-center justify-center transition-colors text-white text-lg font-bold duration-200 hover:text-[#8f0030] dark:hover:text-[#0c0d50]"
+              >
+                ABOUT
+              </a>
+            </li>
+
+            <li
+              class="w-[80%] h-[50px] hover:bg-amber-50 flex justify-center rounded-bl-2xl rounded-tl-2xl"
+            >
+              <a
+                href="index.html#skills"
+                class="w-full h-full flex items-center justify-center transition-colors text-white text-lg font-bold duration-200 hover:text-[#8f0030] dark:hover:text-[#0c0d50]"
+              >
+                SKILLS
+              </a>
+            </li>
+
+            <li
+              class="w-[80%] h-[50px] hover:bg-amber-50 flex justify-center rounded-bl-2xl rounded-tl-2xl bg-amber-50/20"
+            >
+              <a
+                href="proyectos.html"
+                class="w-full h-full flex items-center justify-center transition-colors text-white text-lg font-bold duration-200 hover:text-[#8f0030] dark:hover:text-[#0c0d50]"
+              >
+                PROJECTS
+              </a>
+            </li>
+
+            <li
+              class="w-[80%] h-[50px] hover:bg-amber-50 flex justify-center rounded-bl-2xl rounded-tl-2xl"
+            >
+              <a
+                href="index.html#contact"
+                class="w-full h-full flex items-center justify-center transition-colors text-white text-lg font-bold duration-200 hover:text-[#8f0030] dark:hover:text-[#0c0d50]"
+              >
+                CONTACT
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="flex justify-end pr-4 sm:hidden">
+        <button id="menu-toggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div
+      id="mobile-menu"
+      class="fixed top-[10%] left-0 w-full bg-[#ff4995] dark:bg-[#3e61ff] transform -translate-y-full transition-transform duration-300 ease-in-out z-40 sm:hidden"
+    >
+      <nav class="py-6">
+        <ul class="flex flex-col gap-4 px-6">
+          <li>
+            <a
+              href="index.html#about"
+              class="block py-3 px-4 text-white text-lg font-bold hover:bg-white/20 rounded transition-colors"
+            >
+              ABOUT
+            </a>
+          </li>
+          <li>
+            <a
+              href="index.html#skills"
+              class="block py-3 px-4 text-white text-lg font-bold hover:bg-white/20 rounded transition-colors"
+            >
+              SKILLS
+            </a>
+          </li>
+          <li>
+            <a
+              href="proyectos.html"
+              class="block py-3 px-4 text-white text-lg font-bold bg-white/20 rounded transition-colors"
+            >
+              PROJECTS
+            </a>
+          </li>
+          <li>
+            <a
+              href="index.html#contact"
+              class="block py-3 px-4 text-white text-lg font-bold hover:bg-white/20 rounded transition-colors"
+            >
+              CONTACT
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main
+      class="w-full h-screen overflow-y-auto bg-[url(/img/FONDOGRANDE.png)] bg-cover bg-fixed bg-no-repeat bg-center flex flex-col items-center justify-start dark:bg-black dark:bg-[url(/img/FONDOGRANDE2.png)] dark:bg-center dark:bg-cover dark:bg-no-repeat dark:text-white sm:ml-[20%] md:ml-[25%] sm:w-[80%] md:w-[75%] mt-[10%] sm:mt-0"
+    >
+      <div class="w-full max-w-7xl px-6 py-12">
+        <div class="text-center mb-16">
+          <h1
+            class="text-5xl md:text-7xl font-Cherry-Bomb-One text-[#a51b49] dark:text-[#3e61ff] mb-6"
+          >
+            MIS PROYECTOS
+          </h1>
+          <p
+            class="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto font-Outfit"
+          >
+            Aquí puedes encontrar una selección de mis trabajos más destacados,
+            desde páginas web estáticas hasta aplicaciones dinámicas con
+            diferentes tecnologías.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          id="proyectos-container"
+        ></div>
+
+        <div class="text-center mt-16">
+          <a
+            href="index.html"
+            class="inline-flex items-center px-8 py-4 bg-[#ff4995] hover:bg-[#e63d85] dark:bg-[#3e61ff] dark:hover:bg-[#2d4de0] text-white text-lg font-bold rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              />
+            </svg>
+            Volver al inicio
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <script src="proyectos.js"></script>
+    <script>
+      let botoncito = document.querySelector("#btn-dark");
+      let todo = document.querySelector("#todo");
+      let menuToggle = document.querySelector("#menu-toggle");
+      let mobileMenu = document.querySelector("#mobile-menu");
+
+      botoncito.addEventListener("click", function () {
+        todo.classList.toggle("dark");
+      });
+
+      menuToggle.addEventListener("click", function () {
+        mobileMenu.classList.toggle("-translate-y-full");
+        mobileMenu.classList.toggle("translate-y-0");
+      });
+
+      document.addEventListener("click", function (event) {
+        if (
+          !menuToggle.contains(event.target) &&
+          !mobileMenu.contains(event.target)
+        ) {
+          mobileMenu.classList.add("-translate-y-full");
+          mobileMenu.classList.remove("translate-y-0");
+        }
+      });
+    </script>
+  </body>
+</html>
