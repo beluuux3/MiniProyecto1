@@ -66,7 +66,7 @@ const proyectos = [
     titulo: "Snapshot",
     descripcion:
       "Página para buscar imágenes usando API de Pexels, con buscador dinámico que muestra imágenes relacionadas.",
-    imagen: "/img/proyecto8.jpg",
+    imagen: "/img/Proyecto8.jpg",
     tecnologias: ["React", "Tailwind"],
     demo: "https://snapshot-app-six.vercel.app",
     github: "#",
@@ -75,7 +75,7 @@ const proyectos = [
     titulo: "RecipeHub",
     descripcion:
       "Página que muestra recetas por categorías, con búsqueda y filtros.",
-    imagen: "/img/proyecto9.jpg",
+    imagen: "/img/Proyecto9.jpg",
     tecnologias: ["React", "Tailwind", "JavaScript"],
     demo: "https://api-meal.vercel.app/",
     github: "#",
@@ -83,7 +83,7 @@ const proyectos = [
   {
     titulo: "Klean",
     descripcion: "Recreación de una página de Made with - by Themewagon.",
-    imagen: "/img/proyecto10.jpg",
+    imagen: "/img/Proyecto10.jpg",
     tecnologias: ["React", "Tailwind", "JavaScript"],
     demo: "https://tarea3-gamma.vercel.app/",
     github: "#",
@@ -92,7 +92,7 @@ const proyectos = [
     titulo: "AppWeather",
     descripcion:
       "App del clima para ver los climas en diferentes lugares. Uso de API de ipinfo.io.",
-    imagen: "/img/proyecto11.jpg",
+    imagen: "/img/Proyecto11.jpg",
     tecnologias: ["React", "Tailwind", "JavaScript"],
     demo: "https://appweather-seven.vercel.app/",
     github: "#",
@@ -101,7 +101,7 @@ const proyectos = [
     titulo: "Delinut",
     descripcion:
       "Software de administración de reservas de pedidos e inventario. Backend Python FastAPI, Frontend React con login y roles de administrador, repartidor, cocinero y clientes.",
-    imagen: "/img/proyecto12.jpg",
+    imagen: "/img/Proyecto12.jpg",
     tecnologias: ["React", "Tailwind", "JavaScript", "Next.js", "FastAPI"],
     demo: "https://delinut.vercel.app/",
     github: "#",
@@ -110,7 +110,7 @@ const proyectos = [
     titulo: "Belusauria",
     descripcion:
       "Práctica de página ecommerce con implementación de login y más.",
-    imagen: "/img/proyecto13.jpg",
+    imagen: "/img/Proyecto13.jpg",
     tecnologias: ["React", "Tailwind", "JavaScript"],
     demo: "https://belusauria.vercel.app/",
     github: "#",
