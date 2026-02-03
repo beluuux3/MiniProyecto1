@@ -5,7 +5,7 @@ const proyectos = [
       "Web sobre información del anime One Piece, con detalles de personajes, episodios y noticias.",
     imagen: "/img/TAREA.png",
     tecnologias: ["HTML", "CSS", "JavaScript"],
-    demo: "#",
+    demo: "https://www.behance.net/gallery/242489839/One-Piece-Responsive-Web-Design-(Fan-Project)",
     github: "#",
   },
   {
@@ -53,6 +53,68 @@ const proyectos = [
     demo: "https://proyecto-belen-umam.vercel.app/login",
     github: "#",
   },
+  {
+    titulo: "WindBnB",
+    descripcion:
+      "Página de búsqueda de alojamientos para reservar, con búsqueda por nombre y cantidad de guests.",
+    imagen: "/img/proyecto7.jpg",
+    tecnologias: ["React", "JavaScript", "Tailwind"],
+    demo: "https://wind-react.vercel.app",
+    github: "#",
+  },
+  {
+    titulo: "Snapshot",
+    descripcion:
+      "Página para buscar imágenes usando API de Pexels, con buscador dinámico que muestra imágenes relacionadas.",
+    imagen: "/img/proyecto8.jpg",
+    tecnologias: ["React", "Tailwind"],
+    demo: "https://snapshot-app-six.vercel.app",
+    github: "#",
+  },
+  {
+    titulo: "RecipeHub",
+    descripcion:
+      "Página que muestra recetas por categorías, con búsqueda y filtros.",
+    imagen: "/img/proyecto9.jpg",
+    tecnologias: ["React", "Tailwind", "JavaScript"],
+    demo: "https://api-meal.vercel.app/",
+    github: "#",
+  },
+  {
+    titulo: "Klean",
+    descripcion: "Recreación de una página de Made with - by Themewagon.",
+    imagen: "/img/proyecto10.jpg",
+    tecnologias: ["React", "Tailwind", "JavaScript"],
+    demo: "https://tarea3-gamma.vercel.app/",
+    github: "#",
+  },
+  {
+    titulo: "AppWeather",
+    descripcion:
+      "App del clima para ver los climas en diferentes lugares. Uso de API de ipinfo.io.",
+    imagen: "/img/proyecto11.jpg",
+    tecnologias: ["React", "Tailwind", "JavaScript"],
+    demo: "https://appweather-seven.vercel.app/",
+    github: "#",
+  },
+  {
+    titulo: "Delinut",
+    descripcion:
+      "Software de administración de reservas de pedidos e inventario. Backend Python FastAPI, Frontend React con login y roles de administrador, repartidor, cocinero y clientes.",
+    imagen: "/img/proyecto12.jpg",
+    tecnologias: ["React", "Tailwind", "JavaScript", "Next.js", "FastAPI"],
+    demo: "https://delinut.vercel.app/",
+    github: "#",
+  },
+  {
+    titulo: "Belusauria",
+    descripcion:
+      "Práctica de página ecommerce con implementación de login y más.",
+    imagen: "/img/proyecto13.jpg",
+    tecnologias: ["React", "Tailwind", "JavaScript"],
+    demo: "https://belusauria.vercel.app/",
+    github: "#",
+  },
 ];
 
 function generarProyectosHTML() {
@@ -91,6 +153,8 @@ function generarProyectosHTML() {
           CSS3: "bg-indigo-100 text-indigo-600 dark:bg-indigo-800/40 dark:text-indigo-300",
           "Three.js": "bg-black text-white dark:bg-gray-700 dark:text-gray-200",
           GSAP: "bg-pink-100 text-pink-600 dark:bg-pink-800/40 dark:text-pink-300",
+          "Next.js":
+            "bg-gray-100 text-gray-900 dark:bg-gray-700 dark:text-gray-200",
         };
 
         const colorClass =
@@ -124,11 +188,11 @@ function generarProyectosHTML() {
                     ${tecnologiasHTML}
                 </div>
                 
-                <div class="flex justify-between items-center">
+                <div class="flex justify-center items-center">
                     <a
                         href="${proyecto.demo}"
                         target="_blank"
-                        class="inline-flex items-center px-4 py-2 bg-[#ff4995] hover:bg-[#e63d85] dark:bg-[#3e61ff] dark:hover:bg-[#2d4de0] text-white text-sm font-medium rounded-lg transition-colors duration-200"
+                        class="inline-flex items-center px-6 py-2 bg-[#ff4995] hover:bg-[#e63d85] dark:bg-[#3e61ff] dark:hover:bg-[#2d4de0] text-white text-sm font-medium rounded-lg transition-colors duration-200"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -145,22 +209,6 @@ function generarProyectosHTML() {
                             />
                         </svg>
                         Ver Demo
-                    </a>
-                    
-                    <a
-                        href="${proyecto.github}"
-                        target="_blank"
-                        class="inline-flex items-center px-4 py-2 border-2 border-[#ff4995] dark:border-[#3e61ff] text-[#ff4995] dark:text-[#3e61ff] hover:bg-[#ff4995] hover:text-white dark:hover:bg-[#3e61ff] dark:hover:text-white text-sm font-medium rounded-lg transition-all duration-200"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-4 w-4 mr-2"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
-                        >
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        GitHub
                     </a>
                 </div>
             </div>

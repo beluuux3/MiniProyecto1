@@ -72,7 +72,7 @@ class FormValidator {
     if (!value) {
       this.showError(
         field,
-        `El campo ${this.getFieldLabel(fieldName)} es requerido`
+        `El campo ${this.getFieldLabel(fieldName)} es requerido`,
       );
       return false;
     }
@@ -115,7 +115,7 @@ class FormValidator {
     field.classList.remove(
       "border-green-500",
       "bg-green-50",
-      "dark:bg-green-900/20"
+      "dark:bg-green-900/20",
     );
 
     let errorDiv = field.parentNode.querySelector(".error-message");
@@ -132,7 +132,7 @@ class FormValidator {
     field.classList.add(
       "border-green-500",
       "bg-green-50",
-      "dark:bg-green-900/20"
+      "dark:bg-green-900/20",
     );
     field.classList.remove("border-red-500", "bg-red-50", "dark:bg-red-900/20");
     this.clearError(field);
@@ -148,7 +148,7 @@ class FormValidator {
 
   validateForm() {
     const fields = this.form.querySelectorAll(
-      "input[required], textarea[required]"
+      "input[required], textarea[required]",
     );
     let isValid = true;
 
@@ -167,7 +167,7 @@ class FormValidator {
     if (!this.validateForm()) {
       this.showFormMessage(
         "Por favor, corrige los errores antes de enviar",
-        "error"
+        "error",
       );
       return;
     }
@@ -188,14 +188,14 @@ class FormValidator {
       await this.submitForm();
       this.showFormMessage(
         "¡Mensaje enviado correctamente! Te contactaré pronto.",
-        "success"
+        "success",
       );
       this.form.reset();
       this.clearAllErrors();
     } catch (error) {
       this.showFormMessage(
         "Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.",
-        "error"
+        "error",
       );
     } finally {
       submitBtn.disabled = false;
@@ -220,7 +220,7 @@ class FormValidator {
           message: data.message,
           _subject: "Nuevo mensaje desde tu portafolio",
         }),
-      }
+      },
     );
 
     if (!response.ok) {
@@ -263,7 +263,7 @@ class FormValidator {
         "dark:bg-red-900/20",
         "border-green-500",
         "bg-green-50",
-        "dark:bg-green-900/20"
+        "dark:bg-green-900/20",
       );
     });
   }
@@ -292,7 +292,7 @@ class ScrollAnimations {
       {
         threshold: 0.1,
         rootMargin: "0px 0px -50px 0px",
-      }
+      },
     );
 
     const animatedElements = document.querySelectorAll(".animate-on-scroll");
@@ -346,9 +346,416 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     observer.observe(skillsSection);
   }
+
+  // Generar proyectos dinámicamente
+  generarProyectosHTML();
 });
+
+// Datos de proyectos
+const proyectos = [
+  {
+    titulo: "Página One Piece",
+    descripcion:
+      "Web sobre información del anime One Piece, con detalles de personajes, episodios y noticias.",
+    imagen: "/img/TAREA.png",
+    tecnologias: ["HTML", "CSS", "JavaScript"],
+    demo: "https://www.behance.net/gallery/242489839/One-Piece-Responsive-Web-Design-(Fan-Project)",
+    github: "#",
+  },
+  {
+    titulo: "PRESENTACIÓN - PRACT 1 - FUNVAL",
+    descripcion:
+      "Aprendiendo lo básico de html y css. Primera práctica de Funval.",
+    imagen: "/img/TAREA 1.png",
+    tecnologias: ["HTML", "CSS"],
+    demo: "https://beluuux3.github.io/tareas-funval/practica-1/index.html",
+    github: "#",
+  },
+  {
+    titulo: "FORMULARIO - PRACT 2 - FUNVAL",
+    descripcion:
+      "Recreación de formulario de EpicGames con botones funcionales.",
+    imagen: "/img/TAREA 2.png",
+    tecnologias: ["HTML", "CSS"],
+    demo: "https://beluuux3.github.io/tareas-funval/practica-2/index.html",
+    github: "#",
+  },
+  {
+    titulo: "MANEJO FLEX DISPLAY - PRACT 3 - FUNVAL",
+    descripcion:
+      "Elaboración de página web para una One piece. Uso de Flex, display.",
+    imagen: "/img/TAREA 3.png",
+    tecnologias: ["HTML", "CSS"],
+    demo: "https://beluuux3.github.io/tareas-funval/practica-3/index.html",
+    github: "#",
+  },
+  {
+    titulo: "CHALLENGE TIC TAC TOE - PRACT 4 - FUNVAL",
+    descripcion:
+      "Elaboración de challenge Tic Tac Toe. Responsive web con uso de Grid y Flex.",
+    imagen: "/img/TAREA 4.png",
+    tecnologias: ["HTML", "Tailwind"],
+    demo: "https://beluuux3.github.io/tareas-funval/practica-3/index.html",
+    github: "#",
+  },
+  {
+    titulo: "Sistema de Control Académico - UMAM",
+    descripcion:
+      "Plataforma web para la gestión académica de la Universidad Municipal del Adulto Mayor, con módulos de inscripción, calificaciones y certificados.",
+    imagen: "/img/umam.png",
+    tecnologias: ["React", "Tailwind", "FastAPI"],
+    demo: "https://proyecto-belen-umam.vercel.app/login",
+    github: "#",
+  },
+  {
+    titulo: "WindBnB",
+    descripcion:
+      "Página de búsqueda de alojamientos para reservar, con búsqueda por nombre y cantidad de guests.",
+    imagen: "/img/proyecto7.png",
+    tecnologias: ["React", "JavaScript", "Tailwind"],
+    demo: "https://wind-react.vercel.app",
+    github: "#",
+  },
+  {
+    titulo: "Snapshot",
+    descripcion:
+      "Página para buscar imágenes usando API de Pexels, con buscador dinámico que muestra imágenes relacionadas.",
+    imagen: "/img/proyecto8.png",
+    tecnologias: ["React", "Tailwind"],
+    demo: "https://snapshot-app-six.vercel.app",
+    github: "#",
+  },
+  {
+    titulo: "RecipeHub",
+    descripcion:
+      "Página que muestra recetas por categorías, con búsqueda y filtros.",
+    imagen: "/img/proyecto9.png",
+    tecnologias: ["React", "Tailwind", "JavaScript"],
+    demo: "https://api-meal.vercel.app/",
+    github: "#",
+  },
+  {
+    titulo: "Klean",
+    descripcion: "Recreación de una página de Made with - by Themewagon.",
+    imagen: "/img/proyecto10.png",
+    tecnologias: ["React", "Tailwind", "JavaScript"],
+    demo: "https://tarea3-gamma.vercel.app/",
+    github: "#",
+  },
+  {
+    titulo: "AppWeather",
+    descripcion:
+      "App del clima para ver los climas en diferentes lugares. Uso de API de ipinfo.io.",
+    imagen: "/img/proyecto11.png",
+    tecnologias: ["React", "Tailwind", "JavaScript"],
+    demo: "https://appweather-seven.vercel.app/",
+    github: "#",
+  },
+  {
+    titulo: "Delinut",
+    descripcion:
+      "Software de administración de reservas de pedidos e inventario. Backend Python FastAPI, Frontend React con login y roles de administrador, repartidor, cocinero y clientes.",
+    imagen: "/img/proyecto12.png",
+    tecnologias: ["React", "Tailwind", "JavaScript", "Next.js", "FastAPI"],
+    demo: "https://delinut.vercel.app/",
+    github: "#",
+  },
+  {
+    titulo: "Belusauria",
+    descripcion:
+      "Práctica de página ecommerce con implementación de login y más.",
+    imagen: "/img/proyecto13.png",
+    tecnologias: ["React", "Tailwind", "JavaScript"],
+    demo: "https://belusauria.vercel.app/",
+    github: "#",
+  },
+];
+
+function generarProyectosHTML() {
+  const container = document.getElementById("proyectos-container");
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  // Mostrar solo los primeros 6 proyectos en el index
+  const proyectosMostrar = proyectos.slice(0, 6);
+
+  proyectosMostrar.forEach((proyecto, index) => {
+    const proyectoElement = document.createElement("div");
+    proyectoElement.className =
+      "proyecto-card bg-white dark:bg-neutral-800 rounded-2xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-300 opacity-0 translate-y-8";
+    proyectoElement.style.animationDelay = `${index * 0.15}s`;
+
+    const tecnologiasHTML = proyecto.tecnologias
+      .map((tech) => {
+        const colorClasses = {
+          HTML: "bg-orange-100 text-orange-600 dark:bg-orange-800/40 dark:text-orange-300",
+          CSS: "bg-purple-100 text-purple-600 dark:bg-purple-800/40 dark:text-purple-300",
+          JavaScript:
+            "bg-yellow-100 text-yellow-600 dark:bg-yellow-800/40 dark:text-yellow-300",
+          React:
+            "bg-blue-100 text-blue-600 dark:bg-blue-800/40 dark:text-blue-300",
+          "Vue.js":
+            "bg-green-100 text-green-600 dark:bg-green-800/40 dark:text-green-300",
+          "Node.js":
+            "bg-green-100 text-green-700 dark:bg-green-800/40 dark:text-green-300",
+          Tailwind:
+            "bg-cyan-100 text-cyan-600 dark:bg-cyan-800/40 dark:text-cyan-300",
+          FastAPI:
+            "bg-emerald-100 text-emerald-600 dark:bg-emerald-800/40 dark:text-emerald-300",
+          MongoDB:
+            "bg-green-100 text-green-700 dark:bg-green-800/40 dark:text-green-300",
+          Firebase:
+            "bg-amber-100 text-amber-600 dark:bg-amber-800/40 dark:text-amber-300",
+          CSS3: "bg-indigo-100 text-indigo-600 dark:bg-indigo-800/40 dark:text-indigo-300",
+          "Three.js": "bg-black text-white dark:bg-gray-700 dark:text-gray-200",
+          GSAP: "bg-pink-100 text-pink-600 dark:bg-pink-800/40 dark:text-pink-300",
+          "Next.js":
+            "bg-gray-100 text-gray-900 dark:bg-gray-700 dark:text-gray-200",
+        };
+
+        const colorClass =
+          colorClasses[tech] ||
+          "bg-gray-100 text-gray-600 dark:bg-gray-800/40 dark:text-gray-300";
+
+        return `<span class="px-3 py-1 text-xs font-semibold rounded-full ${colorClass}">${tech}</span>`;
+      })
+      .join("");
+
+    proyectoElement.innerHTML = `
+            <div class="relative overflow-hidden">
+                <img
+                    src="${proyecto.imagen}"
+                    alt="${proyecto.titulo}"
+                    class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+                    onerror="this.src='/img/placeholder-project.jpg'"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white line-clamp-2">
+                    ${proyecto.titulo}
+                </h3>
+                <p class="text-sm text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                    ${proyecto.descripcion}
+                </p>
+                
+                <div class="flex flex-wrap gap-2 mb-6">
+                    ${tecnologiasHTML}
+                </div>
+                
+                <div class="flex justify-center items-center">
+                    <a
+                        href="${proyecto.demo}"
+                        target="_blank"
+                        class="inline-flex items-center px-6 py-2 bg-[#ff4995] hover:bg-[#e63d85] dark:bg-[#3e61ff] dark:hover:bg-[#2d4de0] text-white text-sm font-medium rounded-lg transition-colors duration-200"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-4 w-4 mr-2"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                            />
+                        </svg>
+                        Ver Demo
+                    </a>
+                </div>
+            </div>
+        `;
+
+    container.appendChild(proyectoElement);
+  });
+
+  setTimeout(() => {
+    const proyectoCards = document.querySelectorAll(".proyecto-card");
+    proyectoCards.forEach((card, index) => {
+      setTimeout(() => {
+        card.classList.add("animate-fadeInUp");
+        card.classList.remove("opacity-0", "translate-y-8");
+      }, index * 150);
+    });
+  }, 100);
+}
+
+// Función para manejar el carrusel de proyectos
+function initCarousel() {
+  const container = document.getElementById("proyectos-container");
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
+  const pagination = document.getElementById("carousel-pagination");
+
+  if (!container || !prevBtn || !nextBtn) return;
+
+  let currentIndex = 0;
+  let autoplayInterval = null;
+  const autoplaySpeed = 3000; // 3 segundos
+
+  function getCardsToShow() {
+    const width = window.innerWidth;
+    if (width < 768) return 1; // móvil: 1 card
+    if (width < 1024) return 2; // tablet: 2 cards
+    return 3; // desktop: 3 cards
+  }
+
+  function createPagination() {
+    if (!pagination) return;
+
+    const cardsToShow = getCardsToShow();
+    const totalPages = Math.max(1, container.children.length - cardsToShow + 1);
+    pagination.innerHTML = "";
+
+    for (let i = 0; i < totalPages; i++) {
+      const dot = document.createElement("button");
+      dot.className =
+        "w-3 h-3 rounded-full transition-all duration-300 hover:scale-125";
+      dot.style.backgroundColor = i === currentIndex ? "#ff4995" : "#d1d5db";
+      dot.addEventListener("click", () => {
+        currentIndex = i;
+        updateCarousel();
+        resetAutoplay();
+      });
+      pagination.appendChild(dot);
+    }
+  }
+
+  function updatePagination() {
+    if (!pagination) return;
+
+    const dots = pagination.children;
+    Array.from(dots).forEach((dot, index) => {
+      dot.style.backgroundColor =
+        index === currentIndex ? "#ff4995" : "#d1d5db";
+      dot.style.transform = index === currentIndex ? "scale(1.2)" : "scale(1)";
+    });
+  }
+
+  function updateCarousel() {
+    const cardsToShow = getCardsToShow();
+    const cardWidth = container.children[0]?.offsetWidth || 350;
+    const gap = 32; // gap de 8 en Tailwind (8 * 4px = 32px)
+    const offset = currentIndex * (cardWidth + gap);
+    container.style.transform = `translateX(-${offset}px)`;
+
+    // Aplicar efecto 3D a las cards
+    const cards = container.children;
+    const centerIndex = currentIndex + Math.floor(cardsToShow / 2);
+
+    Array.from(cards).forEach((card, index) => {
+      const distance = index - centerIndex;
+      const isVisible =
+        index >= currentIndex && index < currentIndex + cardsToShow;
+
+      if (isVisible) {
+        if (distance === 0) {
+          // Card central - sin rotación, más grande, más elevada
+          card.style.transform = "rotateY(0deg) scale(1.05) translateZ(50px)";
+          card.style.opacity = "1";
+          card.style.zIndex = "10";
+        } else if (distance < 0) {
+          // Cards a la izquierda - rotar a la derecha
+          card.style.transform = `rotateY(${distance * 8}deg) scale(0.9) translateZ(0px)`;
+          card.style.opacity = "0.7";
+          card.style.zIndex = "5";
+        } else {
+          // Cards a la derecha - rotar a la izquierda
+          card.style.transform = `rotateY(${distance * 8}deg) scale(0.9) translateZ(0px)`;
+          card.style.opacity = "0.7";
+          card.style.zIndex = "5";
+        }
+      } else {
+        card.style.opacity = "0";
+      }
+
+      card.style.transition = "all 0.5s ease-in-out";
+    });
+
+    // Actualizar estado de los botones
+    prevBtn.style.opacity = currentIndex === 0 ? "0.5" : "1";
+    prevBtn.style.pointerEvents = currentIndex === 0 ? "none" : "auto";
+
+    const maxIndex = Math.max(0, container.children.length - cardsToShow);
+    nextBtn.style.opacity = currentIndex >= maxIndex ? "0.5" : "1";
+    nextBtn.style.pointerEvents = currentIndex >= maxIndex ? "none" : "auto";
+
+    updatePagination();
+  }
+
+  function nextSlide() {
+    const cardsToShow = getCardsToShow();
+    const maxIndex = Math.max(0, container.children.length - cardsToShow);
+    if (currentIndex < maxIndex) {
+      currentIndex++;
+    } else {
+      currentIndex = 0; // Loop back to start
+    }
+    updateCarousel();
+  }
+
+  function startAutoplay() {
+    autoplayInterval = setInterval(nextSlide, autoplaySpeed);
+  }
+
+  function stopAutoplay() {
+    if (autoplayInterval) {
+      clearInterval(autoplayInterval);
+      autoplayInterval = null;
+    }
+  }
+
+  function resetAutoplay() {
+    stopAutoplay();
+    startAutoplay();
+  }
+
+  prevBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
+      resetAutoplay();
+    }
+  });
+
+  nextBtn.addEventListener("click", () => {
+    const cardsToShow = getCardsToShow();
+    const maxIndex = Math.max(0, container.children.length - cardsToShow);
+    if (currentIndex < maxIndex) {
+      currentIndex++;
+      updateCarousel();
+      resetAutoplay();
+    }
+  });
+
+  // Pausar autoplay al hover
+  const carouselSection = container.closest("section");
+  if (carouselSection) {
+    carouselSection.addEventListener("mouseenter", stopAutoplay);
+    carouselSection.addEventListener("mouseleave", startAutoplay);
+  }
+
+  // Inicializar
+  setTimeout(() => {
+    createPagination();
+    updateCarousel();
+    startAutoplay();
+  }, 200);
+
+  // Actualizar al redimensionar
+  window.addEventListener("resize", () => {
+    currentIndex = 0;
+    createPagination();
+    updateCarousel();
+  });
+}

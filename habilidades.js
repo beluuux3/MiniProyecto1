@@ -86,16 +86,7 @@ function generarHabilidadesHTML() {
                     ${habilidad.nombre}
                 </h3>
             </div>
-            <p class="mb-4 text-gray-700 dark:text-gray-300">${habilidad.descripcion}</p>
-            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                <div class="progress-bar bg-gradient-to-r from-[#ff4995] to-[#ff7ea9] dark:from-[#3e61ff] dark:to-[#5a73ff] h-2.5 rounded-full transition-all duration-1000 ease-out" 
-                     style="width: 0%"
-                     data-target="${habilidad.nivel}">
-                </div>
-            </div>
-            <div class="mt-2 text-right">
-                <span class="text-sm font-bold text-[#9c2858] dark:text-[#5a73ff]">${habilidad.nivel}%</span>
-            </div>
+            <p class="text-gray-700 dark:text-gray-300">${habilidad.descripcion}</p>
         `;
 
     container.appendChild(habilidadElement);
