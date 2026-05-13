@@ -19,7 +19,7 @@ const proyectos = [
     github: "#",
   },
   {
-    titulo: "Sistema de Control Académico - UMAM",
+    titulo: "Sistema de Control Académico - UMAM - GAMLP",
     descripcion:
       "Plataforma web para la gestión académica de la Universidad Municipal del Adulto Mayor, con módulos de inscripción, calificaciones y certificados.",
     imagen: "/img/umam.png",

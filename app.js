@@ -386,7 +386,7 @@ const proyectos = [
     github: "#",
   },
   {
-    titulo: "Sistema de Control Académico - UMAM",
+    titulo: "Sistema de Control Académico - UMAM - GAMLP",
     descripcion:
       "Plataforma web para la gestión académica de la Universidad Municipal del Adulto Mayor, con módulos de inscripción, calificaciones y certificados.",
     imagen: "/img/umam.png",
@@ -407,7 +407,7 @@ const proyectos = [
     titulo: "Snapshot",
     descripcion:
       "Página para buscar imágenes usando API de Pexels, con buscador dinámico que muestra imágenes relacionadas.",
-    imagen: "/img/proyecto8.jpg",
+    imagen: "/img/Proyecto8.jpg",
     tecnologias: ["React", "Tailwind"],
     demo: "https://snapshot-app-six.vercel.app",
     github: "#",
@@ -416,7 +416,7 @@ const proyectos = [
     titulo: "RecipeHub",
     descripcion:
       "Página que muestra recetas por categorías, con búsqueda y filtros.",
-    imagen: "/img/proyecto9.png",
+    imagen: "/img/Proyecto9.jpg",
     tecnologias: ["React", "Tailwind", "JavaScript"],
     demo: "https://api-meal.vercel.app/",
     github: "#",
