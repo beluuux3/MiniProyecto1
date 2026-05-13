@@ -89,6 +89,15 @@ const proyectos = [
     demo: "https://belusauria.vercel.app/",
     github: "#",
   },
+  {
+    titulo: "Casas Comunales - GAMLP",
+    descripcion:
+      "Sistema de gestión para Casas Comunales del Adulto Mayor en La Paz, que administra talleres, asistencia con geolocalización, roles de usuario y genera reportes PDF desde un dashboard centralizado.",
+    imagen: "/img/casas-comunales.jpg",
+    tecnologias: ["React", "Next.js", "Tailwind"],
+    demo: "https://www.behance.net/gallery/249320331/SISTEMA-CASAS-COMUNALES-GAMLP",
+    github: "#",
+  },
 ];
 
 function generarProyectosHTML() {

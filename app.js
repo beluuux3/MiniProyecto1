@@ -368,30 +368,12 @@ const proyectos = [
     github: "#",
   },
   {
-    titulo: "PRESENTACIÓN - PRACT 1 - FUNVAL",
+    titulo: "Casas Comunales - GAMLP",
     descripcion:
-      "Aprendiendo lo básico de html y css. Primera práctica de Funval.",
-    imagen: "/img/TAREA 1.png",
-    tecnologias: ["HTML", "CSS"],
-    demo: "https://beluuux3.github.io/tareas-funval/practica-1/index.html",
-    github: "#",
-  },
-  {
-    titulo: "FORMULARIO - PRACT 2 - FUNVAL",
-    descripcion:
-      "Recreación de formulario de EpicGames con botones funcionales.",
-    imagen: "/img/TAREA 2.png",
-    tecnologias: ["HTML", "CSS"],
-    demo: "https://beluuux3.github.io/tareas-funval/practica-2/index.html",
-    github: "#",
-  },
-  {
-    titulo: "MANEJO FLEX DISPLAY - PRACT 3 - FUNVAL",
-    descripcion:
-      "Elaboración de página web para una One piece. Uso de Flex, display.",
-    imagen: "/img/TAREA 3.png",
-    tecnologias: ["HTML", "CSS"],
-    demo: "https://beluuux3.github.io/tareas-funval/practica-3/index.html",
+      "Sistema de gestión para Casas Comunales del Adulto Mayor en La Paz, que administra talleres, asistencia con geolocalización, roles de usuario y genera reportes PDF desde un dashboard centralizado.",
+    imagen: "/img/casas-comunales.jpg",
+    tecnologias: ["React", "Next.js", "Tailwind"],
+    demo: "https://www.behance.net/gallery/249320331/SISTEMA-CASAS-COMUNALES-GAMLP",
     github: "#",
   },
   {
@@ -416,7 +398,7 @@ const proyectos = [
     titulo: "WindBnB",
     descripcion:
       "Página de búsqueda de alojamientos para reservar, con búsqueda por nombre y cantidad de guests.",
-    imagen: "/img/proyecto7.png",
+    imagen: "/img/proyecto7.jpg",
     tecnologias: ["React", "JavaScript", "Tailwind"],
     demo: "https://wind-react.vercel.app",
     github: "#",
@@ -425,7 +407,7 @@ const proyectos = [
     titulo: "Snapshot",
     descripcion:
       "Página para buscar imágenes usando API de Pexels, con buscador dinámico que muestra imágenes relacionadas.",
-    imagen: "/img/proyecto8.png",
+    imagen: "/img/proyecto8.jpg",
     tecnologias: ["React", "Tailwind"],
     demo: "https://snapshot-app-six.vercel.app",
     github: "#",
