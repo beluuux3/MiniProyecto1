@@ -8,33 +8,7 @@ const proyectos = [
     demo: "https://www.behance.net/gallery/242489839/One-Piece-Responsive-Web-Design-(Fan-Project)",
     github: "#",
   },
-  {
-    titulo: "PRESENTACIÓN - PRACT 1 - FUNVAL",
-    descripcion:
-      "Aprendiendo lo básico de html y css. Primera práctica de Funval.",
-    imagen: "/img/TAREA 1.png",
-    tecnologias: ["HTML", "CSS"],
-    demo: "https://beluuux3.github.io/tareas-funval/practica-1/index.html",
-    github: "#",
-  },
-  {
-    titulo: "FORMULARIO - PRACT 2 - FUNVAL",
-    descripcion:
-      "Recreación de formulario de EpicGames con botones funcionales.",
-    imagen: "/img/TAREA 2.png",
-    tecnologias: ["HTML", "CSS"],
-    demo: "https://beluuux3.github.io/tareas-funval/practica-2/index.html",
-    github: "#",
-  },
-  {
-    titulo: "MANEJO FLEX DISPLAY - PRACT 3 - FUNVAL",
-    descripcion:
-      "Elaboración de página web para una One piece. Uso de Flex, display.",
-    imagen: "/img/TAREA 3.png",
-    tecnologias: ["HTML", "CSS"],
-    demo: "https://beluuux3.github.io/tareas-funval/practica-3/index.html",
-    github: "#",
-  },
+
   {
     titulo: "CHALLENGE TIC TAC TOE - PRACT 4 - FUNVAL",
     descripcion:
